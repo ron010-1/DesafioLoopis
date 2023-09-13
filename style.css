@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Inter;
+    src: url(https://fonts.googleapis.com/css?family=Inter);
+}
+
+body{
+    font-family: Inter;
+    font-weight: bold;
+    background-image: url(imagens/Imagem-plano-de-fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    background-color: white;
+    width: 549px;
+    padding: 10px;
+    top: 150px;
+    left: 110px;
+    border-radius: 18px;
+    margin: 140px;
+    margin-top: 25px;
+    height: 850px;
+    margin-left: 300px;
+    
+}
+h1{
+    font-size: 64px;
+    font-weight: 700px;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #4C5CFF;
+}
+label{
+    color: #4C5CFF;
+    font-size: 32px;
+    margin: 30px;
+}
+
+#placeholder-text::placeholder {
+    width: 327;
+    height: 19;
+    font-size: 16px;
+    padding-top: 200px;
+}
+
+.tittle{
+    display: flex;
+    font-size: 64px;
+    line-height: 77.45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-left: 700px;
+    margin-bottom: 10px;
+}
+.esquerdo{
+    margin-right: 13px;
+    color: #FFFB62;
+}
+
+.boxe{
+    display: flex;
+}
+.caixadireita{
+    margin-left: 100px;
+}
