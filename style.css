@@ -42,14 +42,26 @@ label{
     line-height: 38.73px;
 }
 
+textarea{
+    font-family: Inter;
+}
 #placeholder-text::placeholder {
     width: 327;
     height: 19;
     font-size: 16px;
     color:  #00000033;
-    text-align: initial;
+    padding-top: 3%;
 }
 
+.name{
+    padding-bottom: 6%;
+}
+.description{
+    padding-bottom: 6%;
+}
+.favorito{
+    padding-bottom: 4%;
+}
 .tittle{
     display: flex;
     font-size: 64px;
@@ -91,4 +103,10 @@ label{
     margin-top: 10px;
     margin-left: 10px;
     color: #4C5CFF;
+}
+#favorite:active{
+    background-color: #4181FF;
+}
+#not-favorite:active{
+    background-color: #4181FF;
 }

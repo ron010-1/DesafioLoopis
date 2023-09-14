@@ -19,19 +19,25 @@
     <main class="caixaesquerda">
     
         <h1>Cadastro</h1>
-    
-        <label for="">Nome:</label><br>
-        <input type="text" id="placeholder-text" placeholder="Digite o nome do jogo..." style="width: 490px; height: 49px; border-radius: 8px;margin-left: 30px; border-color: #737171; border-style: solid;"><br>
 
-        <label for="">Descrição:</label><br>
-        <input type="text" id="placeholder-text" placeholder="Digite uma breve descrição do jogo..." style="width: 490px; height:171px; border-radius: 8px; margin-left: 30px;border-color: #737171; border-style: solid;"><br><br>
+    <div class="name">
+        <label for="">Nome</label><br>
+        <input type="text" id="placeholder-text" placeholder="Digite o nome do jogo..." style="width: 490px; height: 49px; border-radius: 8px;margin-left: 30px; border-color: #737171; border-style: solid;"><br>
+    </div>
+        
+    <div class="description">
+        <label for="">Descrição</label><br>
+        <textarea name="Descrição" id="placeholder-text" placeholder="Digite uma breve descrição do jogo..." cols="30" rows="10" style="width: 490px; height:171px; border-radius: 8px; margin-left: 30px;border-color: #737171; border-style: solid; resize: none; size: 16px;"></textarea>
+    </div>
     
+    <div class="favorito">
         <label for="">Marcar como favorito</label><br>
+    </div>
 
         <div class="father-buttons">
             <div class="buttons"> 
-                <input type="button" value="" style="width: 57px; height: 57px; border-radius: 40px; margin-left: 30px;"><p class="boolean">Sim</p>
-                <input type="button" value="" style="width: 57px; height: 57px; border-radius: 40px;margin-left: 50px"><p class="boolean">Não</p>
+                <input type="button" id="favorite" value="" style="width: 57px; height: 57px; border-radius: 40px; margin-left: 30px;"><p class="boolean">Sim</p>
+                <input type="button" id="not-favorite" value="" style="width: 57px; height: 57px; border-radius: 40px;margin-left: 50px"><p class="boolean">Não</p>
             </div>
         </div>
 
