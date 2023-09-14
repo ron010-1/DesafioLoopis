@@ -10,7 +10,21 @@ body{
     background-size: cover;
 }
 
-main{
+/* Estilo da caixa direita "Jogos cadastrados" */
+.caixadireita{
+    background-color: white;
+    width: 549px;
+    padding: 10px;
+    top: 159px;
+    left: 110px;
+    border-radius: 18px;
+    margin: 140px;
+    margin-top: 25px;
+    height: 821px;
+    margin-left: 300px; 
+}
+
+.caixaesquerda{
     background-color: white;
     width: 549px;
     padding: 10px;
@@ -35,6 +49,7 @@ h1{
 p{
     font-family: Inter;
 }
+
 label{
     color: #4C5CFF;
     font-size: 32px;
@@ -42,14 +57,27 @@ label{
     line-height: 38.73px;
 }
 
+textarea{
+    font-family: Inter;
+}
+
 #placeholder-text::placeholder {
     width: 327;
     height: 19;
     font-size: 16px;
     color:  #00000033;
-    text-align: initial;
+    padding-top: 3%;
 }
 
+.name{
+    padding-bottom: 6%;
+}
+.description{
+    padding-bottom: 6%;
+}
+.favorito{
+    padding-bottom: 4%;
+}
 .tittle{
     display: flex;
     font-size: 64px;
@@ -66,9 +94,10 @@ label{
     font-weight: 900;
 }
 
-.boxe{
+.box{
     display: flex;
 }
+
 .caixadireita{
     margin-left: 100px;
 }
@@ -91,4 +120,10 @@ label{
     margin-top: 10px;
     margin-left: 10px;
     color: #4C5CFF;
+}
+#favorite:active{
+    background-color: #4181FF;
+}
+#not-favorite:active{
+    background-color: #4181FF;
 }
