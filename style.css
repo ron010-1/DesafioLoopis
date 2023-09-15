@@ -61,7 +61,7 @@ textarea{
     font-family: Inter;
 }
 
-#placeholder-text::placeholder {
+.placeholder-text::placeholder {
     width: 327;
     height: 19;
     font-size: 16px;
@@ -121,9 +121,34 @@ textarea{
     margin-left: 10px;
     color: #4C5CFF;
 }
-#favorite:active{
-    background-color: #4181FF;
+input[type="checkbox"],input[type="radio"]{ -webkit-appearance: none;
+    background-color: rgb(174, 174, 174);width: 20px; height: 20px; }input
+    [type="checkbox"]:checked,input[type="radio"]:checked { background-color: #4181FF;} input[type="radio"]
+    {border-radius: 50%;}
+    input[type="radio"]{appearance: none; background-color: rgb(218, 218, 218); width: 20px; height: 20px;}
+
+    input[type="radio"]:checked{ background-color: #4181FF;} 
+    
+    input[type="radio"]{ border-radius: 50%; }
+
+.botSlv:hover{
+    transform: scale(1.2);        
+    transition: all 0.5s; 
 }
-#not-favorite:active{
-    background-color: #4181FF;
+.todo-list{
+    padding: 0;
+
+}
+.todo {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .3s;
+    background: #3C4EFF;
+
+}
+
+.done {
+    background-color: #10086A;
+    color: white;
 }

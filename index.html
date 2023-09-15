@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
     <title>Desafio</title>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <form >
-        <!--Título-Principal-->
+    <form id="todo-form">
+    <!--Título-Principal-->
 <div class="tittle">
     <p class="esquerdo">LOOPIS</p>
     <p>GAMES LIST</p>
@@ -22,12 +26,12 @@
 
     <div class="name">
         <label for="">Nome</label><br>
-        <input type="text" id="placeholder-text" placeholder="Digite o nome do jogo..." style="width: 490px; height: 49px; border-radius: 8px;margin-left: 30px; border-color: #737171; border-style: solid;"><br>
+        <input type="text" id="todo-name" class="placeholder-text" placeholder="Digite o nome do jogo..." style="width: 490px; height: 49px; border-radius: 8px;margin-left: 30px; border-color: #737171; border-style: solid;"><br>
     </div>
         
     <div class="description">
         <label for="">Descrição</label><br>
-        <textarea name="Descrição" id="placeholder-text" placeholder="Digite uma breve descrição do jogo..." cols="30" rows="10" style="width: 490px; height:171px; border-radius: 8px; margin-left: 30px;border-color: #737171; border-style: solid; resize: none; size: 16px;"></textarea>
+        <textarea name="Descrição" id="todo-description" class="placeholder-text" placeholder="Digite uma breve descrição do jogo..." cols="30" rows="10" style="width: 490px; height:171px; border-radius: 8px; margin-left: 30px;border-color: #737171; border-style: solid; resize: none; size: 16px;"></textarea>
     </div>
     
     <div class="favorito">
@@ -37,19 +41,45 @@
 
         <div class="father-buttons">
             <div class="buttons"> 
-                <input type="button" id="favorite" onclick="favoritar" style="width: 57px; height: 57px; border-radius: 40px; margin-left: 30px;"><p class="boolean">Sim</p>
-                <input type="button" id="not-favorite" onclick="favoritar" style="width: 57px; height: 57px; border-radius: 40px;margin-left: 50px"><p class="boolean">Não</p>
+                <input type="radio" id="favorite"  name="botao" style="width: 57px; height: 57px; border-radius: 40px; margin-left: 30px;"><p class="boolean">Sim</p>
+                <input type="radio" id="not-favorite" name="botao" style="width: 57px; height: 57px; border-radius: 40px;margin-left: 50px"><p class="boolean">Não</p>
             </div>
         </div>
 
-        <input type="submit" value="Salvar" style="border-radius: 28px; width:330px; height: 72px; font-size: 32px; align-items: center; font-family: Inter; background-color: #4181FF; color: white; margin-top: 20px; margin-left: 100px;">
+        <div class="botSlv">
+            <input type="submit" id="Salvar" value="Salvar" style="border-radius: 28px; width:330px; height: 72px; font-size: 32px; align-items: center; font-family: Inter; background-color: #4181FF; color: white; margin-top: 20px; margin-left: 100px;">
+        </div>
+
     </main>
     <main class="caixadireita">
 
         <h1>Lista</h1>
         
         <div class="jogos-cadastrados">
-            <label for="" style="color: #0000004D; size: 36px; margin-top: 10%;line-height: 43.57px;"> Não há jogos cadastrados</label>
+            <label id="not-found-games" style="color: #0000004D; size: 36px; margin-top: 10%;line-height: 43.57px;"> Não há jogos cadastrados</label>
+        </div>
+
+        <div id="todo-list">
+            <div class="todo done">
+                <h3>League of Legends</h3>
+                <p>Lol é um jogo 5x5</p>
+                <button class="remove-todo">
+                    <i class="fa fa-trash" ></i>
+                </button>
+                <button class="favorict-todo">
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                </button>
+            </div>
+            <div class="todo">
+                <h3>CsGo</h3>
+                <p>É um jogo de FPS</p>
+                <button class="remove-todo">
+                    <i class="fa fa-trash"></i>
+                </button>
+                <button class="favorict-todo">
+                    <i class="fa-solid fa-star"></i>
+                </button>
+            </div>
         </div>
     </main>
 
