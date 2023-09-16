@@ -35,7 +35,7 @@ body{
     margin-top: 25px;
     height: 821px;
     margin-left: 300px;
-    
+
 }
 h1{
     font-size: 64px;
@@ -68,7 +68,9 @@ textarea{
     color:  #00000033;
     padding-top: 3%;
 }
-
+.placeholder-text{
+    padding: 10px;
+}
 .name{
     padding-bottom: 6%;
 }
@@ -100,6 +102,7 @@ textarea{
 
 .caixadireita{
     margin-left: 100px;
+    padding: 1%;
 }
 /* Div "Pai" dos Botões*/
 .father-buttons{
@@ -121,7 +124,7 @@ textarea{
     margin-left: 10px;
     color: #4C5CFF;
 }
-input[type="checkbox"],input[type="radio"]{ -webkit-appearance: none;
+/*input[type="checkbox"],input[type="radio"]{appearance: none;
     background-color: rgb(174, 174, 174);width: 20px; height: 20px; }input
     [type="checkbox"]:checked,input[type="radio"]:checked { background-color: #4181FF;} input[type="radio"]
     {border-radius: 50%;}
@@ -129,26 +132,97 @@ input[type="checkbox"],input[type="radio"]{ -webkit-appearance: none;
 
     input[type="radio"]:checked{ background-color: #4181FF;} 
     
-    input[type="radio"]{ border-radius: 50%; }
+    input[type="radio"]{ border-radius: 50%; }*/
+
+input[type="radio"]{appearance: none; background-color: rgb(218, 218, 218); width: 20px; height: 20px;}
+
+input[type="radio"]:checked{ background-color: #4181FF;} 
+    
+input[type="radio"]{ border-radius: 50%; }
 
 .botSlv:hover{
     transform: scale(1.2);        
-    transition: all 0.5s; 
-}
-.todo-list{
-    padding: 0;
-
-}
-.todo {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    transition: .3s;
-    background: #3C4EFF;
-
+    transition: all 0.3s; 
 }
 
-.done {
+.roll{
+    height:500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #ff533c;
+}
+/*Box de jogo "favorito"*/
+.lista{
+    margin-right: 100px;
+    height: 210px;
+    display: flex;
     background-color: #10086A;
+    border-radius: 20px;
+    width: 545px;
+}
+    
+/*Cor do texto*/
+h2{
     color: white;
+}
+p{
+    color: white;
+}
+    
+/*Espaçamento do texto à direita*/
+.done{
+    margin-left: 20px;
+}
+    
+/*Parâmetro da figure do joistick*/
+.figurejoistick01{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+    
+/*Parâmetro da figure trash (lixeira)*/
+.lixeira{
+    margin-top: 16px;
+    margin-right: 5px;
+}
+    
+/*Parâmetro da figure favorito (estrela)*/
+.favoritIcon{
+    margin-top: 15px;
+    margin-right: 5px;
+}
+/*Box de jogo "Não favorito"*/
+.lista01{
+    margin-right: 100px;
+    margin-top: 20px;
+    display: flex;
+    background-color: #3C4EFF;
+    height: 210px;
+    width: 545px; 
+    border-radius: 18px;
+}
+    
+/*Espaçamento do texto à direita*/
+.todo{
+    margin-left: 20px;
+}
+    
+/*Parâmetro da figure do joistick*/
+.figurejoistick02{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+    
+/*Parâmetro da figure trash (lixeira)*/
+.lixeira02{
+    margin-top: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+    
+/*Parâmetro da figure favorito (estrela)*/
+.favoritIcon02{
+    margin-top: 15px;
+    margin-right: 5px;
+    cursor: pointer;
 }
