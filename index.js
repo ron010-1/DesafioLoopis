@@ -31,6 +31,41 @@ fatherButtons.addEventListener('change', function (event) {
     }
 });
 
+function createGameCard(jogo) {
+    const cardHTML = `
+      <div class="lista">
+          <div class="figurejoistick">
+              <img src="./imagens/joystick-svgrepo-com 1.png" alt="joystick-svgrepo-com">
+          </div>
+          <div class="todo">
+              <h2>${jogo.nome}</h2>
+              <p>${jogo.descricao}</p>
+          </div>
+          <div class="lixeira">
+              <button class="remove-todo" type="button" style="background-color:#10086A; all:unset;">
+                  <img src="./imagens/trash 1 (1).png" alt="lixeira"></button>
+          </div>
+          <div class="favoritIcon">
+              <button class="favorict-todo" type="button" style="background-color:#10086A; all:unset;">
+                  <img src="${jogo.favorito ? './imagens/Estrela-preenchida.png' : './imagens/star-outline-svgrepo-com 1.png'}" alt="estrela"></button>
+          </div>
+      </div>
+    `;
+    return cardHTML;
+  }
+  function renderGameCards() {
+    const cardsContainer = document.querySelector('.roll');
+  
+    // Limpa os cards existentes
+    cardsContainer.innerHTML = '';
+  
+    // Percorre a lista de jogos e cria um card para cada um
+    lista.forEach((jogo, index) => {
+      const card = createGameCard(jogo);
+      cardsContainer.insertAdjacentHTML('beforeend', card);
+    });
+  }
+  
 const submit = () => {
     const nome = todoName.value;
     const descricao = todoDescription.value;
@@ -45,7 +80,8 @@ const submit = () => {
 
     saveValues(); 
     getValues(); 
-
+    renderGameCards();
     cards.innerHTML = 'teste'
 }
 getValues();
+renderGameCards();
