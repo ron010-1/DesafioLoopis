@@ -27,7 +27,7 @@
         
     <div class="description">
         <label for="">Descrição</label><br>
-        <textarea name="Descrição" id="placeholder-text" placeholder="Digite uma breve descrição do jogo..." cols="30" rows="10" style="width: 490px; height:171px; border-radius: 8px; margin-left: 30px;border-color: #737171; border-style: solid; resize: none; size: 16px;"></textarea>
+        <textarea name="Descrição" class="placeholder-text" placeholder="Digite uma breve descrição do jogo..." cols="30" rows="10" style="width: 490px; height:171px; border-radius: 8px; margin-left: 30px;border-color: #737171; border-style: solid; resize: none; size: 16px;"></textarea>
     </div>
     
     <div class="favorito">
@@ -37,12 +37,12 @@
 
         <div class="father-buttons">
             <div class="buttons"> 
-                <input type="button" id="favorite" onclick="favoritar" style="width: 57px; height: 57px; border-radius: 40px; margin-left: 30px;"><p class="boolean">Sim</p>
-                <input type="button" id="not-favorite" onclick="favoritar" style="width: 57px; height: 57px; border-radius: 40px;margin-left: 50px"><p class="boolean">Não</p>
+                <input type="radio" id="favoritar" name="botao" onclick="favoritar" style="width: 57px; height: 57px; border-radius: 40px; margin-left: 30px;"><p class="boolean">Sim</p>
+                <input type="radio" id="nao-favoritar" name="botao" onclick="naoFavoritar" style="width: 57px; height: 57px; border-radius: 40px;margin-left: 50px"><p class="boolean">Não</p>
             </div>
         </div>
 
-        <input type="submit" value="Salvar" style="border-radius: 28px; width:330px; height: 72px; font-size: 32px; align-items: center; font-family: Inter; background-color: #4181FF; color: white; margin-top: 20px; margin-left: 100px;">
+        <input type="submit" value="Salvar" onclick="salvar" style="border-radius: 28px; width:330px; height: 72px; font-size: 32px; align-items: center; font-family: Inter; background-color: #4181FF; color: white; margin-top: 20px; margin-left: 100px;">
     </main>
     <main class="caixadireita">
 
@@ -54,5 +54,7 @@
 
 </div>
 </form>
+
+<script src="index.js"></script>
 </body>
 </html>
