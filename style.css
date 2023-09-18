@@ -10,6 +10,33 @@ body{
     background-size: cover;
 }
 
+/*O título teve que ser separado em divs (direito e esquerdo) pois estava sendo modificado junto com os parágrafos dos cards*/
+
+/*Título parte "LOOPIS" (Obs: houve mudanças)*/
+.esquerdo{
+    
+    font-size: 64px;
+    line-height: 77.45px;
+    text-align: center;
+    width: 64px;
+    height: 77px;
+    font-family: Inter;
+    margin-right: 13px;
+    color: #FFFB62;
+    font-weight: 900;
+}
+
+/*Título parte "GAMES LIST" (Obs houve mudanças)*/
+.direito{
+    font-family: Inter;
+    margin-left: 250px;
+    font-size: 64px;
+    line-height: 77.45px;
+    height: 77px;
+    margin-left: 200px;
+}
+
+
 /* Estilo da caixa direita "Jogos cadastrados" */
 .caixadireita{
     background-color: white;
@@ -20,7 +47,7 @@ body{
     border-radius: 18px;
     margin: 140px;
     margin-top: 25px;
-    height: 821px;
+    height: 810px;
     margin-left: 300px; 
 }
 
@@ -35,7 +62,7 @@ body{
     margin-top: 25px;
     height: 821px;
     margin-left: 300px;
-    
+
 }
 h1{
     font-size: 64px;
@@ -46,9 +73,7 @@ h1{
     text-align: center;
     color: #4C5CFF;
 }
-p{
-    font-family: Inter;
-}
+
 
 label{
     color: #4C5CFF;
@@ -61,14 +86,16 @@ textarea{
     font-family: Inter;
 }
 
-#placeholder-text::placeholder {
+.placeholder-text::placeholder {
     width: 327;
     height: 19;
     font-size: 16px;
     color:  #00000033;
     padding-top: 3%;
 }
-
+.placeholder-text{
+    padding: 10px;
+}
 .name{
     padding-bottom: 6%;
 }
@@ -78,20 +105,17 @@ textarea{
 .favorito{
     padding-bottom: 4%;
 }
+
+/*Título "LOOPIS GAME LIST" parâmetros, mudanças em *+* */
 .tittle{
+
     display: flex;
     font-size: 64px;
     line-height: 77.45px;
     font-family: Inter;
     color: white;
-    margin-left: 700px;
-    margin-bottom: 10px;
-}
-.esquerdo{
-    font-family: Inter;
-    margin-right: 13px;
-    color: #FFFB62;
-    font-weight: 900;
+    margin-left: 560px; /*+*/
+    padding: 40px       /*+*/
 }
 
 .box{
@@ -100,6 +124,7 @@ textarea{
 
 .caixadireita{
     margin-left: 100px;
+    padding: 1%;
 }
 /* Div "Pai" dos Botões*/
 .father-buttons{
@@ -121,6 +146,7 @@ textarea{
     margin-left: 10px;
     color: #4C5CFF;
 }
+<<<<<<< HEAD
 input[type="radio"]{appearance: none; background-color: rgb(218, 218, 218); width: 20px; height: 20px;}
 
 input[type="radio"]:checked{ background-color: #4181FF;} 
@@ -131,3 +157,69 @@ input[type="radio"]{ border-radius: 50%; }
     transform: scale(1.2);        
     transition: all 0.5s; 
     }
+=======
+/*input[type="checkbox"],input[type="radio"]{appearance: none;
+    background-color: rgb(174, 174, 174);width: 20px; height: 20px; }input
+    [type="checkbox"]:checked,input[type="radio"]:checked { background-color: #4181FF;} input[type="radio"]
+    {border-radius: 50%;}
+    input[type="radio"]{appearance: none; background-color: rgb(218, 218, 218); width: 20px; height: 20px;}
+
+    input[type="radio"]:checked{ background-color: #4181FF;} 
+    
+    input[type="radio"]{ border-radius: 50%; }*/
+
+/*Inputs dos botões "sim" e "não"*/
+input[type="radio"]{appearance: none; background-color: rgb(218, 218, 218); width: 20px; height: 20px;}
+
+input[type="radio"]:checked{ background-color: #4181FF;} 
+    
+input[type="radio"]{ border-radius: 50%; }
+
+
+/*Animation do botão salvar*/
+.botSlv:hover{
+    transform: scale(1.2);        
+    transition: all 0.3s; 
+}
+
+/*Título dos Games "Nome dos games" (Obs: houveram mudanças)*/
+h2{
+    font-size: 24px;
+    line-height: 29.05px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+/*Parágrafos dos cards (Obs: houveram mudanças)*/
+p{
+    font-family: Inter;
+    font-size: 12px;
+    line-height: 14.52px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/*Parâmetros da barra de rolamento que estão na div "roll" que engloba todos os cards*/
+.roll{
+    width: 559px;
+    height: 645px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+/*Box de jogo "favorito"*/
+
+/*Card 01*/
+.lista1{
+    margin-left: 20px;
+    margin-right: 100px;
+    height: 139px;
+    display: flex;
+    background-color: #10086A;
+    border-radius: 20px;
+    width: 500px;
+}
+
+/*card2*/
+>>>>>>> f7222217d9151036100af9b3842addaefc2b195a
