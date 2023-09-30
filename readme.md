@@ -6,7 +6,7 @@
 
 ## Design e Prtótipo do WebSite
 
-<img src=""/assets/pg1.png>  <img src=""/assets/pg2.png>
+<img src="/assets/pg1.png">  <img src="/assets/pg2.png">
 
 ## Técnicos
 
